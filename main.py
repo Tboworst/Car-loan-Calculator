@@ -72,17 +72,18 @@ def calculate_interest_rate(credit_score):
     - 670-739: Good (8%)
     - 740-799: Very Good (6%)
     - 800-850: Excellent (4%)
+    based of something i found online 
     """
     if 300 <= credit_score <= 579:
-        return 15.0  # Poor credit
+        return 15.0 # Poor credit
     elif 580 <= credit_score <= 669:
-        return 12.0  # Fair credit
+        return 12.0 # Fair credit
     elif 670 <= credit_score <= 739:
-        return 8.0   # Good credit
+        return 8.0    # Good credit
     elif 740 <= credit_score <= 799:
-        return 6.0   # Very good credit
+        return 6.0  # Very good credit
     elif 800 <= credit_score <= 850:
-        return 4.0   # Excellent credit
+        return 4.0  # Excellent credit
     else:
         raise ValueError("Invalid credit score. Credit scores range from 300 to 850.")
 
